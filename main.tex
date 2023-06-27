@@ -1,0 +1,110 @@
+\documentclass[a4paper,twoside,12pt]{book}
+\usepackage[english,russian, main = polish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts, amsmath, amsthm, amssymb}
+\usepackage{enumitem}
+\usepackage{lmodern} % font  ?????????
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage{hyperref}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{tabularx}
+\usepackage{picture}
+\usepackage{upgreek}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{pdfpages}
+\usepackage{booktabs,caption}
+\usepackage[flushleft]{threeparttable}
+\usepackage{gensymb}  % \degree
+\usepackage{pgfplotstable}
+\usepackage{pgfplots}
+\usepackage{filecontents}
+
+\usepackage{siunitx}  % SI units
+\usepackage{longtable}  % tables spanning multiple pages
+\usepackage{titlesec}
+
+\usepackage{geometry}
+
+\usepackage{pgfplots}
+\usepackage{tikz} 
+% \usepackage{svg}
+\usepackage{lipsum}
+
+\usepackage{etoolbox}
+\usepackage[parfill]{parskip}
+\usepackage{float} 
+\usepackage{hyperref}
+
+\setlength{\parindent}{1cm}
+
+
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+\usepackage{vcell}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyhead[L]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt} 
+
+
+\geometry{lmargin=3cm, rmargin=3.0cm, tmargin=2.5cm, bmargin=3.5cm}
+\linespread{1.5}
+
+
+\definecolor{lstbackground}{rgb}{0.95, 0.95, 0.95}
+\lstset{
+  backgroundcolor = \color{lstbackground},
+  frame             	= single,
+  keywordstyle=\color{blue},  
+  basicstyle        	= \linespread{1}\ttfamily,
+  columns           	= fullflexible,
+  keepspaces=true,
+  showstringspaces  = false,
+  commentstyle      	= \color{gray}\upshape,
+  numbers           	= left,
+  numbersep         	= 5pt,
+  stepnumber        	= 1,
+  captionpos        	= t,
+  numberstyle      	= \tiny,
+}
+
+\def\crnrs#1{$^\ulcorner#1_\lrcorner$}
+
+\begin{document}
+
+\pagenumbering{arabic}
+\tableofcontents
+
+
+\newpage
+\thispagestyle{plain}
+
+\include{themes/algorytmy_i_struktury.tex}
+\include{themes/bazy_danych.tex}
+\include{themes/bsk.tex}
+\include{themes/io.tex}
+\include{themes/Math.tex}
+\include{themes/oop.tex}
+\include{themes/paradygmaty.tex}
+\include{themes/pas.tex}
+\include{themes/podstawy_informatyki.tex}
+\include{themes/sieci.tex}
+\include{themes/statystyka.tex}
+\include{themes/systemy_operacyjne.tex}
+\include{themes/systemy_wbodowane.tex}
+\include{themes/xz.tex}
+
+
+\end{document}

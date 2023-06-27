@@ -1,0 +1,140 @@
+--------------------------------------------------
+Матеша
+--------------------------------------------------
+Wektory i macierze – definicje i podstawowe operacje. 
+Definicja funkcji obliczalnej (częściowo rekurencyjnej).
+Maszyna Turinga jako model procesów obliczalnych. 
+Zagadnienia nierostrzygalne w kontekście obliczalności. 
+
+
+
+--------------------------------------------------
+БСК
+--------------------------------------------------
+Funkcje skrótu (mieszające) i ich zastosowania. 
+Atrybuty bezpieczeństwa informacji.
+Modele dystrybucji kluczy kryptograficznych.
+Rodzaje zagrożeń oraz ochrona aplikacji sieciowych
+Charakterystyka kryptografii symetrycznej oraz asymetrycznej.
+
+--------------------------------------------------
+Подставовые вопросы информатики
+--------------------------------------------------
+Problemy rekurencyjne i ich rozwiązywanie. 
+Pozycyjne systemy liczbowe i konwersje pomiędzy nimi. 
+Typ, zmienna, obiekt i zarządzanie pamięcią.
+Instrukcje sterujące przepływem programu. 
+Kodowanie liczb ze znakiem w systemie U2, generowanie liczby ze znakiem 
+przeciwnym, dodawanie i odejmowanie. 
+
+--------------------------------------------------
+Статистика
+--------------------------------------------------
+Podstawowe charakterystyki statystyki opisowej i matematycznej.
+
+
+
+--------------------------------------------------
+Сети
+--------------------------------------------------
+Protokoły TCP i UDP – porównanie i zastosowanie.
+Adresowanie w warstwie Internetu modelu TCP/IP. 
+Porównanie zadań przełącznika (switcha) i routera.
+Porównanie modelu OSI i TCP/IP.
+Mechanizm enkapsulacji w modelu OSI.
+
+
+--------------------------------------------------
+ООП
+--------------------------------------------------
+Obiekt i klasa w wybranym języku programowania zorientowanym obiektowo.
+Hermetyzacja, dziedziczenie i polimorfizm w programowaniu obiektowym.
+Interfejsy i klasy abstrakcyjne w programowaniu obiektowym. 
+
+
+--------------------------------------------------
+Алгоритмы и структуры данных
+--------------------------------------------------
+Paradygmat i przykłady programowania generycznego (rodzajowego). 
+Algorytmy sortowania. 
+Strategia „dziel i zwyciężaj” budowania algorytmów. 
+Algorytmy typu zachłannego.
+Algorytmy z nawrotami.
+Grafy, drzewa, kopce – charakterystyka i przykłady zastosowania.
+Definicja i klasy złożoności obliczeniowej – czasowej i pamięciowej.
+
+
+--------------------------------------------------
+Системы компутерове
+--------------------------------------------------
+Wielowarstwowa organizacja systemów komputerowych.
+System operacyjny – charakterystyka, zadania, klasyfikacja. 
+Procesy i wątki – charakterystyka i problemy
+Zarządzanie pamięcią operacyjną w systemie operacyjnym.
+Organizacja systemu plików i pamięci zewnętrznej. 
+
+--------------------------------------------------
+Вбудованые системы
+--------------------------------------------------
+Różnice pomiędzy obsługą zdarzeń w przerwaniach sprzętowych a obsługą zdarzeń w 
+pętli programowej. 
+Powody i przykłady stosowania mikrokontrolerów zamiast typowych komputerów
+Podstawowe układy systemu mikroprocesorowego i sposób wymiany informacji 
+pomiędzy nimi.
+Dekoder, multiplekser i demultiplekser: budowa, zasada, działania, przeznaczenie, 
+zastosowanie.
+Budowa i zasada działania generatora obrazu w systemie mikroprocesorowym.
+
+--------------------------------------------------
+Хз кактельно чего вопросы
+--------------------------------------------------
+Modele reprezentacji wiedzy
+Mechanizmy wnioskowań
+
+
+--------------------------------------------------
+Искесственные интеллекты 
+--------------------------------------------------
+Metody uczenia maszynowego.
+Budowa sieci neuronowych
+
+--------------------------------------------------
+Базы данных
+--------------------------------------------------
+Normalizacja baz danych – pierwsza, druga i trzecia postać normalna.
+Modele baz danych (logiczny, relacyjny, fizyczny).
+Rodzaje zapytań w języku SQL. 
+Funkcje w języku SQL.
+Transakcje w bazach danych. 
+
+--------------------------------------------------
+Супер данилюк (ИО)
+--------------------------------------------------
+Standardowe metodyki procesu wytwórczego oprogramowania. 
+Metodyki zwinne – SCRUM.
+Testowanie oprogramowania.
+Diagramy UML. 
+
+
+
+--------------------------------------------------
+Языки, Парадигмы программирования и прочая фигня
+--------------------------------------------------
+Główne paradygmaty programowania – charakterystyka i przykłady.
+Gramatyki bezkontekstowe – definicje, charakterystyki i przykłady.
+Analiza leksykalna, syntaktyczna i semantyczna kodu. 
+Rodzaje błędów w kontekście analizy leksykalnej, syntaktycznej i semantycznej kodu.
+Deklaratywne programowanie funkcyjne: rachunek lambda, monady
+Deklaratywne programowanie w logice: klauzule Horne'a, nawracanie. 
+
+--------------------------------------------------
+Программоване апликаций сетевых
+--------------------------------------------------
+Mechanizm sesji w zarządzaniu stanem aplikacji sieciowej.
+Mechanizm gniazd – pojęcie, sposób realizacji i zastosowanie 
+Metody obsługi wielu klientów równolegle w aplikacjach sieciowych.
+Pocztowe protokoły warstwy aplikacji. 
+Porównanie HTTP i WebSocket. 
+
+
+--------------------------------------------------
