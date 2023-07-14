@@ -1,4 +1,145 @@
 \chapter{OOP}
 \section{Obiekt i klasa w wybranym języku programowania zorientowanym obiektowo.}
+
+\subsection*{Класс}
+
+Класс в Java — это шаблон или чертёж, используемый для описания объектов. Класс определяет свойства (атрибуты) и методы, которые будут общими для всех объектов данного класса. Вот пример простого класса в Java:
+
+\begin{lstlisting}[language=Java]
+public class Car {
+    // class fields
+    private String color;
+    private int speed;
+
+    // Class methods
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public String getColor() {
+        return this.color;
+    }
+
+    public int getSpeed() {
+        return this.speed;
+    }
+}
+\end{lstlisting}
+
+\subsection*{Объект}
+
+Объект в Java — это экземпляр класса. Создание объекта класса называется инстанциацией. Каждый объект имеет свои собственные значения для свойств, определённых в классе. Вот как вы можете создать объект класса `Car` в Java:
+
+\begin{lstlisting}[language=Java]
+public class Main {
+    public static void main(String[] args) {
+        // creation obj Car
+        Car myCar = new Car();
+
+        // using methods of Car class to set and get values
+        myCar.setColor("Red");
+        myCar.setSpeed(70);
+        System.out.println("Car color: " + myCar.getColor());
+        System.out.println("Car speed: " + myCar.getSpeed());
+    }
+}
+\end{lstlisting}
+
+
 \section{Hermetyzacja, dziedziczenie i polimorfizm w programowaniu obiektowym.}
+
+\subsection*{Герметизация}
+
+Герметизация, или инкапсуляция, — это концепция ООП, которая скрывает детали реализации от пользователя. Если метод или переменная объявлены с модификатором private, они не могут быть доступны извне класса.
+
+\begin{lstlisting}[language=Java]
+public class Example {
+    private String hiddenVar;
+
+    public String getHiddenVar() {
+        return this.hiddenVar;
+    }
+
+    public void setHiddenVar(String value) {
+        this.hiddenVar = value;
+    }
+}
+\end{lstlisting}
+
+\subsection*{Наследование}
+
+Наследование — это свойство, которое позволяет одному классу наследовать поля и методы другого. С помощью наследования можно создавать более общие классы, а затем расширять их для создания более специализированных классов.
+
+\begin{lstlisting}[language=Java]
+public class Vehicle {
+    public void move() {
+        System.out.println("Vehicle is moving");
+    }
+}
+
+public class Car extends Vehicle {
+    @Override
+    public void move() {
+        System.out.println("Car is moving");
+    }
+}
+\end{lstlisting}
+
+\subsection*{Полиморфизм}
+
+Полиморфизм позволяет использовать объекты различных типов с общим интерфейсом. В Java это достигается благодаря использованию интерфейсов и наследования.
+
+\begin{lstlisting}[language=Java]
+public interface Animal {
+    public void makeSound();
+}
+
+public class Cat implements Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Meow");
+    }
+}
+
+public class Dog implements Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Woof");
+    }
+}
+\end{lstlisting}
+
+
 \section{Interfejsy i klasy abstrakcyjne w programowaniu obiektowym.}
+
+
+
+\subsection*{Интерфейсы}
+
+Интерфейс в объектно-ориентированном программировании — это контракт, который определяет, какие методы должны быть реализованы в классе. Интерфейсы не содержат деталей реализации методов. В Java это может выглядеть так:
+
+\begin{lstlisting}[language=Java]
+public interface Animal {
+    void makeSound();
+}
+\end{lstlisting}
+
+\subsection*{Абстрактные классы}
+
+Абстрактный класс — это класс, который не может быть инстанциирован напрямую, и который обычно содержит один или несколько абстрактных методов (методов без реализации). Он служит базой для подклассов, которые должны реализовать все абстрактные методы. Пример абстрактного класса в Java:
+
+\begin{lstlisting}[language=Java]
+public abstract class Animal {
+    public abstract void makeSound();
+
+    public void eat() {
+        System.out.println("The animal eats");
+    }
+}
+\end{lstlisting}
+
+В этом примере, `makeSound` — это абстрактный метод, который должен быть реализован в каждом конкретном подклассе класса `Animal`. В то же время, `eat` — это обычный метод с реализацией, и его можно переопределить в подклассе, если требуется.
